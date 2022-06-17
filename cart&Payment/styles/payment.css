@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    font-family: "Akshar", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #F2F2F2;
+}
+#payment_container{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    
+}
+#left_div{
+    border-top: 5px solid black;
+    width: 64%;
+    background-color: white;
+}
+.gray{
+    background-color: #F2F2F2;
+    height: 35px;
+}
+#details_form,
+#delivery_form,
+#payment_form
+{
+    margin: 5px 30px 10px 30px;
+    margin-bottom: 35px;
+}
+#details_form input, #details_form select{
+    width: 100%;
+    height: 37px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+#details_form>form>p,#payment_form>form>p{
+    margin-bottom: 7px;
+}
+#details_form>h3:first-child,
+#delivery_form>h3:first-child,
+#payment_form>h3:first-child{
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+/*-------------- second form-------------- */
+#delivery_form>div>p{
+    font-size: 13px;
+}
+#delivery_form>div>h5{
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+#delivery_form>div>h4{
+    font-weight: 550;
+    color: green;
+    margin-top: 0px;
+}
+#delivery_form>div,#delivery_form img{
+    display: none;
+}
+
+/* -------------3rd form ie. payment form---- */
+#payment_form>form , #delivery_form>div{
+    padding: 5px 30px 10px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#payment_form>form>input{
+    width: 100%;
+    height: 37px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#payment_form>form>input:last-child{
+    width: 48%;
+}
+#payment_form>form>img , #delivery_form>div>img{
+    width: 60%;
+    margin-top: -10px;
+    margin-left: -5px;
+}
+#payment_form>form>h5{
+    font-weight: 550;
+    font-size: 16px;
+}
+#payment_form>form>#expiry_info>select{
+    width: 48%;
+    height: 37px;
+    padding-left: 10px;
+}
+#payment_form>form>#expiry_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#payment_form, #delivery_form{
+    position: relative;
+}
+#payment_form>h3+img , #delivery_form>h3+img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 65px;
+    right: -9px;
+    background-color: white;
+    
+}
+
+/* -------submit div---------- */
+
+#submit_div{
+    padding: 20px;
+}
+#submit_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+}
+#submit_btn:hover{
+    background-color: teal;
+    border: 0;
+}
+#submit_btn>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; 
+}
+#submit_btn>p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 180px;
+}
+/* terms&cond */
+
+#PayTandC{
+    background-color: #F2F2F2;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 30px;
+}
+/* ------------------RIGHT DIV------------------------- */
+
+
+#right_div{
+    width: 33%;
+    height: 500px;
+    margin-bottom: 25px;
+    background-color: white;
+    position: sticky;
+    top: 25px;
+    padding: 5px 22px;
+}
+#r_orderSumm,#r_delv,#r_saving,#r_saleTax,#r_TotalToPay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 13px;
+    /* justify-content: space-around; */
+}
+#r_delAmt{
+    color: green;
+}
+
+#r_itemsdisplay{
+    /* border: 1px solid black; */
+    height: 210px;
+    padding: 5px;
+    margin-bottom: 9px;
+    overflow-y: scroll;
+}
+
+.singlebox{
+    display: flex;
+    /* border: 1px solid green; */
+    line-height: 17px;
+}
+.des_div p{
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+.des_div p:last-child{
+    margin-bottom: 8px;
+}
+.img_div{
+    width: 35%;
+    display: flex;
+}
+.img_div>img{
+    width: 70px;
+    height: 80px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.des_div{
+    width: 60%;
+}
+
+/* delivery */
+#r_delv,
+#r_saving,
+#r_saleTax,
+#r_TotalToPay
+{
+    border-top: 1px solid #d9d8d8;
+    font-size: 14px;
+}
+#r_delv>p:first-child,
+#r_saving>p:first-child,
+#r_saleTax>p:first-child,
+#r_TotalToPay>p:first-child
+{
+    margin-left: 8px;
+}
+#r_TotalToPay{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------Payment footer------------------ */
+#payment_footer{
+    border-top: 1px solid gray;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 78%;
+}
+#payment_footer>p{
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
