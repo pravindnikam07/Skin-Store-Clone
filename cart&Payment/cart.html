@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | SkinStore</title>
+    <link rel="icon" href="https://s1.thcdn.com/checkout/resources/imgs/skstr/favicon.skstr.ico">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Lato&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        nav{
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div id="cart_container">
+        <div id="cart_heading">
+            <h1>Your Cart</h1>
+            <button class="checkoutBtn1">
+                <img src="./images/unlock.png" alt="">
+                <p>CHECKOUT SECURELY NOW</p>
+            </button>
+        </div>
+        <!-- Cart Table -->
+        <div id="mainCart">
+            <div id="cart_prod_table">
+                <div id="table_head">
+                    <p>Items</p>
+                    <p>Price</p>
+                    <p>Quantity</p>
+                    <p>Subtotal</p>
+                </div>
+                <div id="cart_items">
+                    <!-- append -->
+                </div>
+                <div id="cart_total">
+                    <p>Total Savings:</p>
+                    <div id="offer_amount">
+                        <!-- append -->
+                    </div>
+                    <div id="coupon_div">
+                        <input type="text" id="couponSearch" placeholder="Got a coupon code? Enter it here:">
+                        <button id="couponButton">ADD</button>
+                    </div>
+                    <div id="continue_checkout">
+                        <button id="continueBtn">CONTINUE SHOPPING</button>
+                        <button class="checkoutBtn2">
+                            <img src="./images/unlock.png" alt="">
+                            <p>CHECKOUT SECURELY NOW</p>
+                        </button>
+                    </div>
+                    <div id="payment_logos">
+                        <div><img src="./images/paypalLogo.png" alt=""></div>
+                        <div><img src="./images/Alipay-Logo.png" alt=""></div>
+                        <div><img src="./images/afterpay-logo.png" alt=""></div>
+                        <div><img src="./images/google-pay.png" alt=""></div>
+                        <div><img src="./images/sezzle.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div id="free_prods">
+                <h4>Gift Selection</h4>
+                <p>Select a gift for you or someone you love when you spend $130 or more</p>
+                <div id="freeProd_display">
+                    <!-- append -->
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+</html>
+<script src="./data.js"></script>
+<script src="./cartScripts/cart.js"></script>

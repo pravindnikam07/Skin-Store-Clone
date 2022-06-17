@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/register.css">
+    <script src="https://kit.fontawesome.com/e6fd8410c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="topsection">
+        <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg"
+            alt="">
+    </div>
+    <div id="centerbox">
+        <h2>About You</h2>
+        <h3>Sign Up With</h3>
+        <div id="socialmedia">
+
+            <div id="facebook"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" alt="" >
+                <p>Facebook</p>
+            </div>
+
+
+            <div id="google"> 
+
+                <img src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1"
+                    alt="">
+                <p>Google</p>
+
+
+            </div>
+        </div>
+        <hr>
+        <h3>Or create an email account</h3>
+
+        <form action="" id="form">
+            <label for="">
+                <span>*</span>Full Name
+            </label>
+            <input type="text" id="name" oninput="clearerror(this.id)">
+            <div id="nameerror" class="formerror">
+                <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                <span></span>
+            </div>
+
+            <label for="">
+                <span>*</span>
+                Email address</label>
+            <input type="email" id="email" oninput="clearerror(this.id)">
+            <div class="formerror" id="emailerror">
+                <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                <span></span>
+            </div>
+           
+
+            <label for=""> <span>*</span>
+                Confirm Email address</label>
+            <input type="text" id="emailconfirm" oninput="emailerrorclear()">
+            <div class="formerror" id="emailconferror">
+                <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                <span></span>
+            </div>
+           
+
+            <label for="">
+                <span>*</span>
+                Password</label>
+            <input type="password" id="password" oninput="clearerror(this.id)">
+            
+            <div class="formerror" id="passworderror">
+                <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                <span></span>
+            </div>
+            <p>Include a minimum of 6 characters, and contain at least 1 number</p>
+            
+
+            <label for="">
+                <span>*</span>
+                Confirm Password</label>
+            <input type="password" id="passwordconfirm" oninput="passworderrorclear()">
+            <div class="formerror" id="passwordconferror">
+                <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                <span></span>
+            </div>
+           
+
+            <label for="">
+                Cell Phone Number <span>(Optional)</span>
+
+            </label>
+            <input type="text" id="cellphone">
+            <p>We will use this number to send occasional promotional messages.</p>
+            
+
+
+            <div id="referral">
+                <label for="">Referral Code<span>(Optional)</span></label>
+
+                <input type="text" id="refercode">
+                <p>* Your referrals discount is automatically applied at cart</p>
+            </div>
+
+            <input type="submit" id="submit" value="CONTINUE">
+
+
+
+        </form>
+        <p id="condition">By proceeding, you are confirming that you agree to our
+            <span>Terms and Conditions</span> and
+            <span> Privacy Policy</span>
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="./JS/register.js"></script>
