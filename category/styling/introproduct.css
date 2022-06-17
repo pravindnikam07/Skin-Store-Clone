@@ -1,0 +1,189 @@
+
+
+        
+
+        #shivam1{
+            width: 95%;
+            /* position: absolute; */
+margin: auto;
+        }
+        #shivam1 img{
+            width: 100%;
+        }
+        #shivam1>div{
+            /* position: relative; */
+            margin-top: -500px;
+            border: 2px solid black;
+            width: 500px;
+            margin-left: 50px;
+            text-align: center;
+        }
+        #shivam1 p:nth-child(1){
+            font-size: 60px;
+        }
+        #shivam1 p:nth-child(2){
+            font-size: 30px;
+        }
+        #shivam1 button{
+            padding: 15px;
+            background-color: black;
+            color: white;
+
+        }
+        #shivam1 button:hover{
+            padding: 15px;
+            background-color: gray;
+            color: black;
+            cursor: pointer;
+
+
+        }
+        #shivam2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+         
+            width: 90%;
+            margin: auto;
+            gap: 30px;
+            margin-top: 100px;
+        }
+        #shivam2>div{
+          
+            text-align: center;
+          
+        }
+        #shivam2 img{
+            width: 100%;
+            border-radius: 50%;
+        }
+        #shivam2 button{
+            padding: 15px;
+            background-color: white;
+            color: black;
+        }
+        #shivam2 button:hover{
+         
+            background-color: rgb(176, 191, 191);
+           
+            cursor: pointer;
+
+
+        }
+        #shivam3{
+            display: flex;
+            justify-content: space-around;
+           
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+           
+        }
+        #shivam3 div{
+            background-color: #f2f2f2;
+             padding: 15px;
+            /*padding-left: 50px;
+            padding-right: 50px; */
+            width: 200px;
+            text-align: center;
+           
+        }
+
+        #shivam3 div:hover{
+            background-color: #b4b0b0;
+            cursor: pointer;
+            
+           
+        }
+        #shivam4{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+        #shivam4 img{
+            width: 100%;
+           
+        }
+        #shivam5{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 90%;
+            margin: auto;
+            gap: 20px;
+            text-align: center;
+
+        }
+        #shivam5 img{
+            width: 100%;
+           
+        }
+        
+        #sell{
+            text-align: center;
+        }
+        #shivam5 button{
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: white;
+        }
+        #shivam6{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+         
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            gap: 20px;
+            text-align: center;
+        }
+        #shivam6 img{
+width: 100%;
+border-radius: 50%;
+        }
+        #shivam6 button{
+            padding: 15px;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        #shivam2>div{
+            transition: 1s;
+        }
+      #shivam2>div:hover{
+        transform: scale(1.01);
+        z-index: 2;
+       } #shivam4>div{
+            transition: 1s;
+        }
+      #shivam4>div:hover{
+        transform: scale(1.3);
+        z-index: 2;
+       }
+/* #shivam2>div:hover{
+    background-color: white;
+}
+
+       button::before{
+content: "";
+position: absolute;
+width: 100%;
+left: 0;
+height: 0%;
+background: pink;
+z-index: -1;
+transition: 0.2s;
+}
+button::before{
+    top: 0;
+    border-radius:40px;
+}
+button:hover::before{
+    height: 100%;
+    width: 100%;
+   
+} */
