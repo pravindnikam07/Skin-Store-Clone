@@ -1,0 +1,117 @@
+#other_customer_buy{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+#other_customer_buy>h3{
+    text-align: center;
+}
+#product_4{
+    width: 100%;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    gap: 10px;
+}
+#product_4>div{
+    position: relative;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+}
+
+#skin_gift{
+    margin: 15px 0px 20px -2px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    border: 2px solid rgb(194, 26, 26);
+    background: white;
+    margin-right: 130px;
+}
+
+#images_section{
+    position: relative;
+}
+#product_image1{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 180px;
+    object-fit: contain;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+#product_image1:hover{
+    transform: scale(1.3);
+}
+
+#buy_products{
+    border: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgb(54, 53, 53);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+#price_through span{
+    color: green;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+#buy_products:hover{
+ background:rgb(72, 180, 180);
+ color: black;
+}
+
+#dummy_brand{
+    width: 70px;
+    font-size: 16px;
+    padding: 5px;
+    border: 0;
+    background-color: rgb(219, 250, 227);
+    color: black;
+    /* border: 1px solid black; */
+}
+
+#dummy_cat{
+    width: 70px;
+    font-size: 16px;
+    padding: 5px;
+    border: 0;
+    background-color: rgb(235, 245, 254);
+    color:black;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+#price_through{
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#bookmark_tag{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 40px;
+    color: black;
+    cursor: pointer;
+    border-radius: 80%;
+}
+
+#product_content{
+    padding: 15px;
+    height: auto;
+    margin-bottom: 50px;
+}
