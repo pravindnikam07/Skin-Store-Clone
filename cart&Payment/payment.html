@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="https://s1.thcdn.com/checkout/resources/imgs/skstr/favicon.skstr.ico">
+    <link rel="stylesheet" href="./styles/payment.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Lato&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        nav{
+            height: 100px;
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div id="payment_container">
+        <div id="left_div">
+            <div id="details_form">
+                <h3>1. Shipping Address</h3>
+                <form>
+                    <p>* Country/Region</p>
+                    <select id="s_country">
+                        
+                        <!-- append -->
+                    </select>
+                    <p>* Full Name</p>
+                    <input type="text" id="s_name"><br>
+                    <p>* Zip Code/Postcode</p>
+                    <input type="text" id="s_zipcode"><br>
+                    <p>Company Name</p>
+                    <input type="text" id="s_company"><br>
+                    <p>* Address</p>
+                    <input type="text" id="s_address"><br>
+                    <p>Address 2</p>
+                    <input type="text" id="s_address2"><br>
+                    <p>* Apartment/Suite number</p>
+                    <input type="text" id="s_apartment"><br>
+                    <p>* Town/City</p>
+                    <input type="text" id="s_town"><br>
+                    <p>* State or Province</p>
+                    <input type="text" id="s_state"><br>
+                    <p>* Contact Number</p>
+                    <input type="tel" id="s_contactNumber"><br>
+                </form>
+            </div>
+            <div class="gray"></div>
+            <div id="delivery_form">
+                <h3>2. Select Delivery Option</h3>
+                <img src="./images/tick.png" alt="">
+                <div>
+                    <h5>Tracked Delivery</h5>
+                    <p>Delivered within 3-5 working days!</p>
+                    <h4>FREE</h4>
+                    <p>Receive updates to monitor the progress of your delivery</p>
+                </div>
+            </div>
+            <div class="gray"></div>
+            <div id="payment_form">
+                <h3>3. Select Payment Method</h3>
+                <img src="./images/tick.png" alt="">
+                <form>
+                    <h5>Credit/Debit Card</h5>
+                    <img src="./images/creditcards.png" alt="">
+                    <p>* Card Number</p>
+                    <input type="number" id="c_num"><br>
+                    <p>* Name on card</p>
+                    <input type="text" id="c_name"><br>
+                    <p>* Expiry Date</p>
+                    <div id="expiry_info">
+                        <select id="expiry-month">                            
+                            <option value="">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="11">11</option>
+                        </select>
+                        <select id="expiry-year">
+                            <option value="">Year</option>
+                            <option value="2022">22</option>
+                            <option value="2023">23</option>
+                            <option value="2024">24</option>
+                            <option value="2025">25</option>
+                            <option value="2026">26</option>
+                            <option value="2027">27</option>
+                            <option value="2028">28</option>
+                            <option value="2029">29</option>
+                            <option value="2030">30</option>
+                            <option value="2031">31</option>
+                            <option value="2032">32</option>
+                            <option value="2033">33</option>
+                            <option value="2034">34</option>
+                            <option value="2035">35</option>
+                            <option value="2036">36</option>
+                            <option value="2037">37</option>
+                            <option value="2038">38</option>
+                            <option value="2039">39</option>
+                            <option value="2040">40</option>
+                            <option value="2041">41</option>
+                            <option value="2042">42</option>
+                        </select>
+                    </div>
+                    <p>* Security Code (CV2)</p>
+                    <input type="number" id="c_security">
+                </form>
+            </div>
+            <div class="gray"></div>
+            <div id="submit_div">
+                <button id="submit_btn">
+                    <img src="./images/unlock.png" alt="">
+                    <p>SUBMIT MY ORDER</p>
+                </button>
+            </div>
+            <div id="PayTandC">
+                <p>By placing this order, you are confirming that you agree to our Terms and Conditions and Privacy Policy.</p>
+            </div>
+        </div>
+        <div id="right_div">
+            <div id="r_orderSumm">
+                <p>Order Summary</p>
+                <p id="r_count">
+                    <!-- appended -->
+                </p>
+            </div>
+            <div id="r_itemsdisplay">
+                <!-- appended -->
+            </div>
+            <div id="r_delv">
+                <p>Delivery</p>
+                <p id="r_delAmt">
+                    Free
+                </p>
+            </div>
+            <div id="r_saving">
+                <p>Savings</p>
+                <p id="r_saveamt">
+                    <!-- appended -->
+                </p>
+            </div>
+            <div id="r_saleTax">
+                <p>Sales Tax</p>
+                <p id="r_taxAmt">
+                    <!-- appended -->
+                </p>
+            </div>
+            <div id="r_TotalToPay">
+                <p>Total to pay</p>
+                <p id="r_TotAmt">
+                    <!-- appended -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="payment_footer">
+        <p>THGPP LLC</p>
+        <p>1209 Orange Street, Wilmington, New Castle, DE 19801. United States</p>
+    </div>
+</body>
+</html>
+<script src="./cartScripts/payment.js"></script>
