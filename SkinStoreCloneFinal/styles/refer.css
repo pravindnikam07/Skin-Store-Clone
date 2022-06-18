@@ -1,0 +1,107 @@
+#image1{
+     
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+ }
+ .name1{
+     text-align: center;
+ }
+ #shivam1{
+    display: flex;
+    justify-content: space-around;
+     
+     width: 40%;
+     margin: auto;
+ }
+ #shivam1>div{
+     background-color: aqua;
+     width: 250px;
+    height: 150px;
+    background-color: rgb(201, 185, 185);
+    border: 2px solid black;
+    text-align: center;
+ }
+ #shivam1>div>div{
+     background-color: white;
+     width: auto;
+
+ }
+ #shivam2{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2,1fr);
+     width: 30%;
+     margin: auto;
+     gap: 20px;
+ }
+ #shivam2>div{
+     border: 2px solid black;
+     width: 200px;
+     height: 50px;
+     margin-bottom: -10px;
+     
+ }
+ #shivam2 h5{
+     margin-left: 30px;
+   
+ }
+ #shivam3{
+     margin-top: 150px;
+ }
+ #shivam5{
+     margin-top: 100px;
+ }
+ #shivam6{
+     margin-top: 150px;
+ }
+ #sinput{
+     margin-left: 635px;
+ }
+ #sinput>input{
+     width: 150px;
+     height: 35px;
+ }
+ #sinput>button{
+     /* width: 150px; */
+     height: 40px;
+     background-color: black;
+     color: white;
+ }
+ #shivam6>div{
+     width: 150px;
+     height: 40px;
+     background-color: green;
+     color: black;
+     margin-left: 635px;
+   position: absolute;
+   border-radius: 10px;    
+    
+    
+ }
+#shivam6 h3{
+
+ color: aqua;
+ position: relative;
+ margin-top: 10px;
+ margin-left: 40px;
+
+}
+#shivam33{
+ display: flex;
+ width: 90%;
+ margin: auto;
+
+ margin-top: 100px;
+
+}
+#shivam33 img{
+ width: 100%;
+ border-radius: 50% 
+}
+#shivam33>div{
+ padding: 20px;
+
+
+}

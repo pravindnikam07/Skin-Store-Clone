@@ -1,0 +1,58 @@
+#shivam1{
+    width: 90%;
+    margin: auto;
+    
+        }
+        #shivam1 img{
+            width: 100%;
+            z-index: 0;
+        }
+        #shiv1{
+           border: 2px solid grey;
+           margin-top: -450px;
+           width: 50%;
+           text-align: center;
+        }
+        #shiv1 span{
+    font-size:60px;
+    font-weight: lighter;
+        }
+        #shiv2 button{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+        }
+        #shiv2 button:hover{
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(226, 252, 226);
+    cursor: pointer;
+    color: black;
+        }
+        #shiv3{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 150px;
+        }
+        #shiv4{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+           
+            /* gap: 5px; */
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        #shiv4 img{
+            width: 90%;
+        }
+        #shiv4 img:nth-child(1){
+            /* width: 80%; */
+            height: 80%;
+        }

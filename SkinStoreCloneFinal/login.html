@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Store | Login IN</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <script src="https://kit.fontawesome.com/e6fd8410c3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://s1.thcdn.com/checkout/resources/imgs/skstr/favicon.skstr.ico">
+</head>
+<body>
+    <div id="topsection" onclick="link_location()">
+        <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="">
+    </div>
+    <div id="outerbox">
+        <div id="centerbox">
+            <h2>Existing Customers</h2>
+            
+            <div id="invalid">
+                <i class='fas fa-exclamation-triangle' style='font-size:26px;color:red'></i>
+              <p>The email address or password you entered were invalid.</p>
+            </div>
+    
+                <form action="" id="form">
+                    
+                    <label for="">
+                        <span>*</span>
+                        Email address</label>
+                    <input type="email" id="email" oninput="clearerror(this.id)">
+                    <div class="formerror" id="emailerror">
+                        <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                        <span></span>
+                    </div>
+
+
+    
+                    
+    
+                    <label for="">
+                        <span>*</span>
+                        Password</label>
+                    <input type="password" id="password" oninput="clearerror(this.id)">
+                    
+                    <div class="formerror" id="passworderror">
+                        <i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i>
+                        <span></span>
+                    </div>
+                   
+    
+                   
+                    <p id="forgot">FORGOTTEN YOUR PASSWORD?</p>
+    
+                    <input type="submit" id="submit" value="SIGN IN">
+    
+                    
+    
+                </form>
+                <p>Or, Continue with</p>
+                
+                <div id="socialmedia">
+
+                    <div id="facebook"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" alt="" >
+                        <p>Facebook</p>
+                    </div>
+        
+        
+                    <div id="google"> 
+        
+                        <img src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1"
+                            alt="">
+                        <p>Google</p>
+        
+        
+                    </div>
+                </div>
+                
+    
+    
+        </div>
+        <div id="rightbox">
+            <h2>New Customers</h2>
+            
+         
+          <button id="register">REGISTER</button>
+    
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./scripts/login.js"></script>

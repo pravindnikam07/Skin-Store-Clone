@@ -1,0 +1,322 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    
+}
+
+/* #features{
+    height:60px;
+    width: 100%;
+    margin-top: 170px;
+    background-color: #f2f2f2;
+    margin-top: 170px;
+}
+#features>div{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    
+}
+#features>div>div{
+    margin: auto;
+}
+#features>div>div:hover{
+    cursor: pointer;
+}
+#features+div{
+    background-color: #2e3337;
+    height: 40px;
+    padding: 5px;
+    padding-left: 100px;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+#features+div>h3{
+    margin: auto;
+                
+} */
+
+
+#slidingimage{
+width: 90%;
+margin: auto;
+
+
+
+}
+.slideshow-container {
+max-width: 100%;
+margin: auto;  
+
+   
+}
+.slideshow-container img{
+height: 500px;
+width: 100%;
+}
+
+.mySlides,.fade{
+/* position: relative; */
+width: 100%;
+/* z-index: 1; */
+}
+
+.image_content{
+
+width: 41%;
+box-sizing: border-box;
+/* position: absolute; */
+/* top: 10px;
+left: 10px; */
+/* font-size: 26px; */
+/* text-align: center; */
+/* z-index: 2; */
+}
+.image_content>img{
+width: 350px;
+height: 150px;
+}
+.image_content>img+p{
+font-size: medium;
+}
+.image_content>div{
+
+display: flex;
+justify-content: space-around;
+}
+.image_content>div>button{
+height: 35px;
+color: white;
+background-color: #2e3337;
+border: none;
+width: 49%;
+}
+.image_content button:hover{
+background-color: #28bdb7;
+cursor: pointer;
+}
+
+
+.slideshow-container:hover{
+cursor: pointer;
+}
+
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 80%;
+width: auto;
+padding: 16px;
+margin-top: -300px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+background-color: #a9bac1;
+}
+.prevs, .nexts {
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    width: auto;
+    padding: 16px;
+    margin-top: -300px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #a9bac1;
+    
+    }
+
+.next {
+right: 8%;
+border-radius: 3px 0 0 3px;
+}
+.nexts {
+    
+    right: -41%;
+    top: -250px;
+    border-radius: 3px 0 0 3px;
+}
+.prevs {
+    
+    left: -41%;
+    top: -250px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+
+}
+
+.dot {
+cursor: pointer;
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+background-color: black;
+}
+
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+#category{
+position: relative;
+text-align: center;
+height:80px;
+
+}
+#category>div{
+
+display: flex;
+justify-content: space-around;
+width: 100%;
+
+}
+#category>div>div{
+
+/* border: 1px solid black; */
+margin-top: 20px;
+width: 15%;
+height: 180px;
+
+}
+#category>div>div>a>img{
+border-radius: 50%;
+width: 100%;
+height: 170px;
+opacity: 0.8;
+
+}
+#category>div>div>a>img:hover{
+cursor: pointer;
+opacity: 1;
+}
+
+.trending{
+
+margin-top: 250px;
+text-align: center;
+}
+.trending>div{
+line-height: 15px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+.trending>div>div{
+font-size: smaller;
+font-weight: lighter;
+margin-top: 20px;
+height: 100%;
+gap: 200px;
+}
+
+
+.trending>div>div>a>img{
+width:100%;
+border-radius: 50%;
+
+}
+.trending button{
+width: 90px;
+height: 40px;
+background-color: white;
+border: 1px solid black;
+}
+.trending button:hover{
+    background-color: #28bdb740;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#trendingNow{
+margin-top: 40px;
+text-align: center;
+}
+#trendingNow>div{
+display: flex;
+width: 100%;
+}
+#trendingNow>div>div{
+width: 100%;
+gap: 20px;        
+}
+#trendingNow>div>div>img{
+width: 90%;
+}
+
+h1{
+font-weight: lighter;
+text-align: center;
+}
+#buying>div{
+display: flex;
+gap: 10px;
+}
+#buying>div>div{
+border: 1px solid red;
+width: 24%;
+/* margin-left: 15px; */
+}
+#buying+div{
+margin-top: 30px;
+display: flex;    
+gap: 10px;    
+justify-content: space-around;
+height: 160px;
+}
+#buying+div>div{
+width: 15%;
+height: 100px;
+}
+#buying+div>div>img{
+margin: auto;
+width: 100%;
+/* height: 100px; */
+
+}
+#blog
+{
+margin-top: -200px;
+}
+#blog button{
+width: 100px;
+}
+body>main>div {
+width: 80%;
+margin: auto;
+}
+
+#imageBottom>img{
+width: 100%;
+}
+
+
+#main_index{
+    margin: 30px 0;
+}

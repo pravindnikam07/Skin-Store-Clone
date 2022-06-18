@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.n a {
+    text-decoration: none;
+    color: black;
+}
+#go_top {
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#go_top:hover {
+    background-color: #bdbdbd;
+}
+#nrow1 {
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    background-color: rgb(241, 241, 241); 
+}
+.np {
+    padding: 4px 0px; 
+    color: rgb(112, 106, 106); 
+}
+.nmr {
+    margin-right: 20px;
+}
+
+#nrow2 {
+    /* changed */
+    position: sticky;
+    /* border: 1px solid red; */
+    top: 0px;
+    width: 100%;
+    background-color: white;
+}
+#nrow2>div {
+    justify-content: space-between;
+    align-items: center;
+}
+#nrow2>div:last-child {
+    color: rgb(126, 120, 120);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    font-size: 15px;
+}
+#nrow2>div:first-child>div {
+    padding: 13px 0;
+}
+#nrow2>div:last-child>div {
+    padding: 8px 0;
+}
+#nrow2>div img {
+    width: 180px;
+}
+
+
+#naccount {
+    position: relative;
+}
+#account_hover {
+    display: none;
+    width: 250px;
+    position: absolute;
+    right: -100px;
+    background-color: white;
+}
+#account_hover>div {
+    padding: 6px;
+}
+#account_hover>div * {
+    margin: 6px;
+    padding: 6px;
+}
+#account_hover>div:first-child {
+    background-color: #f5f5f5;
+}
+#account_hover button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+#account_hover button:first-child {
+    color: white;
+    background-color: black;
+    border: none;
+}
+#account_hover button:first-child:hover {
+    color: black;
+    cursor: pointer;
+    background-color: teal;
+}
+#account_hover button:last-child {
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+}
+#account_hover button:last-child:hover {
+    color: black;
+    cursor: pointer;
+    background-color: rgb(206, 251, 251);
+}
+#account_hover>div *:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+#ncart {
+    position: relative;
+}
+#cart_hover {
+    display: none;
+    width: 400px;
+    height: auto;
+    max-height: 500px;
+    padding: 10px;
+    overflow: scroll;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#cart_amount {
+    background-color: #f2f2f2;
+}
+#cart_amount>div {
+    display: flex;
+    justify-content: space-between;
+}
+#cart_amount>button {
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+#cart_amount>button:hover {
+    background-color: teal;
+    color: black;
+    cursor: pointer;
+}
+#cart_products_scroll {
+    display: flex;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#cart_hover>div>div>img {
+    width: 100px;
+    height: 90px;
+}
+#cart_hover>div>div {
+    padding: 10px;
+}
+#cart_hover>div>div>* {
+    padding: 5px 10px;
+}
+#cart_hover>div>div:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+#cart_qty {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -3px;
+    right: 30px;
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+#nsearch {
+    position: relative;
+}
+#nsearch>input {
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#search_icon {
+    position: absolute;
+    padding: 7px;
+    right: 12px;
+    top: 15px; 
+}
+#search_data {
+    width: 400px;
+    height: fit-content;
+    max-height: 500px;
+    overflow: scroll;
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#search_data>div {
+    display: flex;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#search_data>div>img {
+    width: 100px;
+    height: 90px;
+}
+#search_data>div>div {
+    padding: 10px;
+}
+#search_data>div>div>* {
+    padding: 5px 10px;
+}
+#search_icon:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+#search_delete {
+    display: none;
+    position: absolute;
+    right: 45px;
+    top: 17px; 
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+}
+#search_delete:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+#nrow3 {
+    /* changed */
+    /* margin-top: 100px; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    padding: 8px 20%;
+    background-color: rgb(241, 241, 241);
+}
+#nrow3>div {
+    padding: 10px 0;
+}
+
+#nrow4>a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    word-spacing: 2px;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+#nrow4>a:hover {
+    color: rgb(65, 65, 65);
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* footer */
+#frow1 {
+    gap: 30px;
+}
+#fr1c1 {
+    width: 40%;
+}
+#fr1c1>div, #fr1c2>#fm {
+    margin: 25px 0; 
+}
+#fr1c1>div>a>button {
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+#fr1c1>div>button:hover {
+    color: black;
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+#fr1c1>div *, #fr1c2>#fm * {
+    margin: 6px 0;
+}
+#fr1c1 i {
+    color: rgba(146, 154, 38, 0.695);
+    width: 30px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+.fhov>div *, #fm>div>div * {
+    color: rgb(97, 96, 96);
+}
+#fr1c2 {
+    width: 60%;
+}
+#fm {
+    justify-content: space-between;
+}
+#fr1c2 i {
+    color: rgba(146, 154, 38, 0.695);
+    width: 40px;
+}
+#fr1c2>#fm * {
+    padding: 6px 0; 
+}
+#fr1c2>div p {
+    margin: 26px 0;
+}
+#fr1c2>#fm>div {
+    width: 30%;
+}
+#fr1c2>#fm>div>hr {
+    padding: 0;
+    margin-top: -4px;
+    margin-bottom: 25px;
+}
+
+#frow2>div {
+    margin: 40px 0;
+
+}
+#frow2>div:first-child p {
+    margin: 20px 0;
+}
+#frow2>div:first-child {
+    width: 30%;
+}
+#frow2>div:last-child {
+    width: 60%;
+}
+#flogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#flogo>img {
+    width: 80px;
+    height: 50px;
+}
+
+/* common class */
+.ndf, .fdf {
+    display: flex;
+}
+.ndp, .fdp {
+    padding: 0 10%;
+}
+
+/* hover functionality */
+.hov>div:hover, #nhov:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(79, 76, 76);
+    
+}
+#nrow3>div>a:hover {
+    color: goldenrod;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.fhov>div>a:hover, #fr1c2>#fm>div>div>a:hover {
+    color: black;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 6px;
+}
+#signup_button:hover {
+    background-color: teal;
+    cursor: pointer;
+}
+
+#ncategory>div {
+    padding: 6px;
+}
+#nrow2:hover #hover_category {
+    display: block;
+    cursor: pointer;
+}
+
+/* hover on category */
+#hover_category {
+    display: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    position: absolute;
+    left: 10%;
+    z-index: 1500;
+}
+#hover_category>div {
+    display: flex;
+    gap: 30px;
+}
+#hover_category>div>div {
+    width: 30%;
+}
+#hover_category>div>div {
+    padding: 10px;
+    font-size: 17px;
+}
+#hover_category>h3 {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+#hover_category>div>div>hr {
+    margin-top: -4px;
+}
+#hover_category>div>div>hr {
+    margin: 0 0 10px 0;
+}
+#hover_category>div>div>p {
+ padding: 4px;
+}
+#hover_category>div>div>p:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #f2f2f2;
+}
+#search_data>div:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
