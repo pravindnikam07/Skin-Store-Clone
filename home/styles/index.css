@@ -73,7 +73,7 @@ width: 41%;
 box-sizing: border-box;
 position: absolute;
 top: 10px;
-left: 10px;
+left: 50px;
 font-size: 26px;
 text-align: center;
 
@@ -111,10 +111,10 @@ cursor: pointer;
 .prev, .next {
 cursor: pointer;
 position: absolute;
-top: 80%;
+top: 25%;
 width: auto;
 padding: 16px;
-margin-top: -300px;
+/* margin-top: -300px; */
 color: white;
 font-weight: bold;
 font-size: 18px;
