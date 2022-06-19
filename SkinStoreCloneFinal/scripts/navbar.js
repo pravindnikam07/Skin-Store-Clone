@@ -164,7 +164,7 @@ hover_off.addEventListener('mouseover', hover_category_hide);
 
 // seaching functionality
 let getdata = async (query) => {
-    let res = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=${query}`);
+    let res = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=${query}`);
     let data = await res.json();
     return data;
 }

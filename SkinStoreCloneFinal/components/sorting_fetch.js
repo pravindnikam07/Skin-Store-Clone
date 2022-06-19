@@ -1,7 +1,7 @@
 
 
 let sorting_data = async (price="10",price_cat,brand="covergirl",product="eyeshadow")=>{
-    let res = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?${price_cat}=${price}&brand=${brand}&product_type=${product}`);
+    let res = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?${price_cat}=${price}&brand=${brand}&product_type=${product}`);
     let data = await res.json();
     return data;
 }
