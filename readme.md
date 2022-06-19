@@ -15,3 +15,7 @@ Javascript, HTML, CSS, Localstorage and API
 ## Authors
 - [@Nara Vinay Kumar](https://github.com/vinaykumar2n)
 - [@Pravin Nikam](https://github.com/pravindnikam07)
+- [@Manoj Attri](https://github.com/manojattri181)
+- [@Shivam Gupta](https://github.com/shivamgupta8482)
+- [@Hamja Khan](https://github.com/HamjaKhan)
+- [@Sandeep Sharma](https://github.com/Sbsharma0897)
