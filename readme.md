@@ -1,5 +1,5 @@
 # Project Skin Store Clone
-- Skin Store is e-commerse site for premium beauty products across skin, makeup and hair.
+- Skin Store is e-commerce site for premium beauty products across skin, makeup and hair.
 - Collaborative project buid by team of 6, executed in 5 days.
 
 ## Features
