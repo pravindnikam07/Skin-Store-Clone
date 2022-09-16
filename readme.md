@@ -16,9 +16,20 @@
 ## Demo Link
   - [skinstoreclone](https://skinstoreclone.netlify.app/)
 ## Images
+- Home page
+
   ![image](https://user-images.githubusercontent.com/101383047/189055602-279ae597-dcda-4f6e-994e-cac6fdc7b8d1.png)
+ 
+- Search bar
+  
   ![image](https://user-images.githubusercontent.com/101383047/189056271-e0e6ad87-9887-41a6-b524-a6b47a881787.png)
+ 
+- Product page
+ 
   ![image](https://user-images.githubusercontent.com/101383047/189056887-ee834a2c-b2c9-438a-97f7-978b3a148f34.png)
+ 
+- Cart page
+ 
   ![image](https://user-images.githubusercontent.com/101383047/189056553-c61265a3-f32e-4871-a0e9-67a847d4c96f.png)
 
 ## Authors
